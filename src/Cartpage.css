@@ -22,3 +22,16 @@
   margin-right: 20px;
   margin-top: 50px;
 }
+.cartpage-wares {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+.cartpage-images {
+  width: 200px;
+
+  height: auto;
+  border: 1px solid #0b3937;
+  border-radius: 20px;
+}

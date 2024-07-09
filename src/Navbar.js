@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-
+import { Link } from "react-router-dom";
 import MivamartImage from "./MivamartImage.jpg";
 import Wishlist from "./Wishlist.jpg";
 import Search from "./Search.jpg";
@@ -17,21 +17,11 @@ export default function Navbar() {
           className="mivamart"
         />
         <ul className="top-menu" id="top-menutwo">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Best sellers</a>
-          </li>
-          <li>
-            <a href="#">Catalog</a>
-          </li>
-          <li>
-            <a href="#">Contact us</a>
-          </li>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Best sellers</li>
+          <li>Catalog</li>
+          <li>Contact us</li>
         </ul>
         <ul className="icons">
           <li>
@@ -41,9 +31,10 @@ export default function Navbar() {
             <img src={Wishlist} alt="" />
           </li>
           <li>
-            <img src={cart} alt="" />
+            <Link to="/cart">
+              <img src={cart} alt="Cart" />
+            </Link>
           </li>
-
           <li>
             <img src={profile} alt="" />
           </li>

@@ -37,35 +37,21 @@ export default function Cartpage() {
           <p>You have a 10% discount. Checkout now to redeem it.</p>
         </div>
       </div>
-      <div className="mt-5 cart-header">
+      <div className="mt-5 cart-header d-none d-md-flex justify-content-between">
         <div>Description</div>
         <div>Quantity</div>
         <div>Price</div>
         <div>Total</div>
       </div>
 
-      <div>
-        <ul>
-          <li>
-            <img src={Rectanglenine} alt="" className="cartpage-images" />
-          </li>
-          <li>Sensei Ceramic</li>
-          <li>35 pieces available</li>
-          <li>2 </li>
+      <div className="d-flex justify-content-between mt-5">
+        <div>
+          <img src={Rectanglenine} alt="" />
+        </div>
 
-          <li>$60.00</li>
-          <li>$120.00</li>
-          <li>
-            <i class="fa fa-shopping-basket"></i>
-          </li>
-        </ul>
-      </div>
-
-      <div className="d-flex justify-content-between">
-        <div className="cart-itemone">
-          <img src={Rectanglenine} alt="" className="cartpage-images" />
-
+        <div>
           <p>Sensei Ceramic</p>
+
           <p>35 pieces available</p>
         </div>
 
@@ -249,6 +235,7 @@ export default function Cartpage() {
       </div>
       <Footer />
       <Extrafooter />
+      <Cartpage />
     </div>
   );
 }
